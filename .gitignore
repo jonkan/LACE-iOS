@@ -1,3 +1,13 @@
+
+# https://stackoverflow.com/questions/5533050/gitignore-exclude-folder-but-include-specific-subfolder
+# Ignore the build folder exept the .framework outputs, obviously.. ;)
+!build/
+build/*
+!build/framework/
+build/framework/*
+!build/framework/LACE.framework/
+!build/framework/Eigen.framework/
+
 .DS_Store
 
 # Xcode

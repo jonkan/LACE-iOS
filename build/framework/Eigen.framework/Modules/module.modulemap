@@ -1,0 +1,6 @@
+framework module Eigen {
+  umbrella header "Eigen.h"
+
+  export *
+  module * { export * }
+}

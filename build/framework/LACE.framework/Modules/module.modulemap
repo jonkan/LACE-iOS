@@ -1,0 +1,6 @@
+framework module LACE {
+  umbrella header "LACE.h"
+
+  export *
+  module * { export * }
+}
