@@ -7,17 +7,300 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26D3A7921FF16577007EB7CF /* LACE_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 26D3A7901FF16577007EB7CF /* LACE_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3A7921FF16577007EB7CF /* LACE.h in Headers */ = {isa = PBXBuildFile; fileRef = 26D3A7901FF16577007EB7CF /* LACE.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B0551FF1B11F007EB7CF /* Eigen.h in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B0531FF1B11F007EB7CF /* Eigen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4151FF1B26F007EB7CF /* LpcClusterData.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2431FF1B26F007EB7CF /* LpcClusterData.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4161FF1B26F007EB7CF /* LpcLineClusterAlgorithm.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2441FF1B26F007EB7CF /* LpcLineClusterAlgorithm.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4171FF1B26F007EB7CF /* LpcRun.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2451FF1B26F007EB7CF /* LpcRun.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4181FF1B26F007EB7CF /* LpcRootInput.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2461FF1B26F007EB7CF /* LpcRootInput.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4191FF1B26F007EB7CF /* LpcTextInput.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2471FF1B26F007EB7CF /* LpcTextInput.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B41A1FF1B26F007EB7CF /* LpcAbsOutput.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2481FF1B26F007EB7CF /* LpcAbsOutput.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B41B1FF1B26F007EB7CF /* LpcPoint.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2491FF1B26F007EB7CF /* LpcPoint.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B41C1FF1B26F007EB7CF /* LpcCurve.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B24A1FF1B26F007EB7CF /* LpcCurve.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B41D1FF1B26F007EB7CF /* LpcHitCollection.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B24B1FF1B26F007EB7CF /* LpcHitCollection.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B41E1FF1B26F007EB7CF /* LpcSingleClusterAlgorithm.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B24C1FF1B26F007EB7CF /* LpcSingleClusterAlgorithm.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B41F1FF1B26F007EB7CF /* LpcAlgorithm.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B24D1FF1B26F007EB7CF /* LpcAlgorithm.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4201FF1B26F007EB7CF /* LpcAbsClusterAlgorithm.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B24E1FF1B26F007EB7CF /* LpcAbsClusterAlgorithm.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4211FF1B26F007EB7CF /* LpcFunctions.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B24F1FF1B26F007EB7CF /* LpcFunctions.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4221FF1B26F007EB7CF /* LpcRootOutput.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2501FF1B26F007EB7CF /* LpcRootOutput.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4231FF1B26F007EB7CF /* LpcParameters.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2511FF1B26F007EB7CF /* LpcParameters.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4241FF1B26F007EB7CF /* LpcBranchAlgorithm.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2521FF1B26F007EB7CF /* LpcBranchAlgorithm.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4251FF1B26F007EB7CF /* LpcAbsCurve.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2531FF1B26F007EB7CF /* LpcAbsCurve.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4261FF1B26F007EB7CF /* LpcLineFitter.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2541FF1B26F007EB7CF /* LpcLineFitter.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4271FF1B26F007EB7CF /* LpcPathLength.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2551FF1B26F007EB7CF /* LpcPathLength.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4281FF1B26F007EB7CF /* LpcBranchCollection.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2561FF1B26F007EB7CF /* LpcBranchCollection.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4291FF1B26F007EB7CF /* LpcShowerAlgorithm.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2571FF1B26F007EB7CF /* LpcShowerAlgorithm.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B42A1FF1B26F007EB7CF /* LpcProcess.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2581FF1B26F007EB7CF /* LpcProcess.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B42B1FF1B26F007EB7CF /* LpcInputFactory.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2591FF1B26F007EB7CF /* LpcInputFactory.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B42C1FF1B26F007EB7CF /* LpcBinRange.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B25A1FF1B26F007EB7CF /* LpcBinRange.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B42D1FF1B26F007EB7CF /* LpcConvexHull.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B25B1FF1B26F007EB7CF /* LpcConvexHull.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B42E1FF1B26F007EB7CF /* LpcAbsInput.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B25C1FF1B26F007EB7CF /* LpcAbsInput.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B42F1FF1B26F007EB7CF /* LpcEvent.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B25D1FF1B26F007EB7CF /* LpcEvent.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4301FF1B26F007EB7CF /* LpcCluster.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B25E1FF1B26F007EB7CF /* LpcCluster.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4311FF1B26F007EB7CF /* LpcBranch.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B25F1FF1B26F007EB7CF /* LpcBranch.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4321FF1B26F007EB7CF /* LpcVertex.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2601FF1B26F007EB7CF /* LpcVertex.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4331FF1B26F007EB7CF /* LpcFeatures.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2611FF1B26F007EB7CF /* LpcFeatures.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4341FF1B26F007EB7CF /* LpcResiduals.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2621FF1B26F007EB7CF /* LpcResiduals.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4351FF1B26F007EB7CF /* LpcHit.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2631FF1B26F007EB7CF /* LpcHit.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4361FF1B26F007EB7CF /* LpcOutputFactory.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2641FF1B26F007EB7CF /* LpcOutputFactory.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4371FF1B26F007EB7CF /* LpcLineSegment.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2651FF1B26F007EB7CF /* LpcLineSegment.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B4381FF1B26F007EB7CF /* LpcTextOutput.hh in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B2661FF1B26F007EB7CF /* LpcTextOutput.hh */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B57E1FF1B26F007EB7CF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 26D3B3D21FF1B26F007EB7CF /* README.md */; };
+		26D3B5941FF1B26F007EB7CF /* LpcParameters.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B3EB1FF1B26F007EB7CF /* LpcParameters.cc */; };
+		26D3B5951FF1B26F007EB7CF /* LpcBranchAlgorithm.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B3EC1FF1B26F007EB7CF /* LpcBranchAlgorithm.cc */; };
+		26D3B5961FF1B26F007EB7CF /* LpcAlgorithm.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B3ED1FF1B26F007EB7CF /* LpcAlgorithm.cc */; };
+		26D3B5971FF1B26F007EB7CF /* LpcFunctions.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B3EE1FF1B26F007EB7CF /* LpcFunctions.cc */; };
+		26D3B5981FF1B26F007EB7CF /* LpcRootOutput.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B3EF1FF1B26F007EB7CF /* LpcRootOutput.cc */; };
+		26D3B5991FF1B26F007EB7CF /* LpcTextInput.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B3F01FF1B26F007EB7CF /* LpcTextInput.cc */; };
+		26D3B59A1FF1B26F007EB7CF /* LpcAbsOutput.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B3F11FF1B26F007EB7CF /* LpcAbsOutput.cc */; };
+		26D3B59B1FF1B26F007EB7CF /* LpcCurve.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B3F21FF1B26F007EB7CF /* LpcCurve.cc */; };
+		26D3B59C1FF1B26F007EB7CF /* LpcPoint.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B3F31FF1B26F007EB7CF /* LpcPoint.cc */; };
+		26D3B59D1FF1B26F007EB7CF /* LpcSingleClusterAlgorithm.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B3F41FF1B26F007EB7CF /* LpcSingleClusterAlgorithm.cc */; };
+		26D3B59E1FF1B26F007EB7CF /* LpcHitCollection.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B3F51FF1B26F007EB7CF /* LpcHitCollection.cc */; };
+		26D3B59F1FF1B26F007EB7CF /* LpcLineClusterAlgorithm.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B3F61FF1B26F007EB7CF /* LpcLineClusterAlgorithm.cc */; };
+		26D3B5A01FF1B26F007EB7CF /* LpcClusterData.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B3F71FF1B26F007EB7CF /* LpcClusterData.cc */; };
+		26D3B5A11FF1B26F007EB7CF /* LpcRun.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B3F81FF1B26F007EB7CF /* LpcRun.cc */; };
+		26D3B5A21FF1B26F007EB7CF /* LpcRootInput.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B3F91FF1B26F007EB7CF /* LpcRootInput.cc */; };
+		26D3B5A31FF1B26F007EB7CF /* LpcHit.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B3FA1FF1B26F007EB7CF /* LpcHit.cc */; };
+		26D3B5A41FF1B26F007EB7CF /* LpcLineSegment.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B3FB1FF1B26F007EB7CF /* LpcLineSegment.cc */; };
+		26D3B5A51FF1B26F007EB7CF /* LpcOutputFactory.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B3FC1FF1B26F007EB7CF /* LpcOutputFactory.cc */; };
+		26D3B5A61FF1B26F007EB7CF /* LpcTextOutput.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B3FD1FF1B26F007EB7CF /* LpcTextOutput.cc */; };
+		26D3B5A71FF1B26F007EB7CF /* LpcVertex.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B3FE1FF1B26F007EB7CF /* LpcVertex.cc */; };
+		26D3B5A81FF1B26F007EB7CF /* LpcBranch.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B3FF1FF1B26F007EB7CF /* LpcBranch.cc */; };
+		26D3B5A91FF1B26F007EB7CF /* LpcFeatures.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B4001FF1B26F007EB7CF /* LpcFeatures.cc */; };
+		26D3B5AA1FF1B26F007EB7CF /* LpcResiduals.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B4011FF1B26F007EB7CF /* LpcResiduals.cc */; };
+		26D3B5AB1FF1B26F007EB7CF /* LpcInputFactory.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B4021FF1B26F007EB7CF /* LpcInputFactory.cc */; };
+		26D3B5AC1FF1B26F007EB7CF /* LpcConvexHull.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B4031FF1B26F007EB7CF /* LpcConvexHull.cc */; };
+		26D3B5AD1FF1B26F007EB7CF /* LpcEvent.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B4041FF1B26F007EB7CF /* LpcEvent.cc */; };
+		26D3B5AE1FF1B26F007EB7CF /* LpcCluster.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B4051FF1B26F007EB7CF /* LpcCluster.cc */; };
+		26D3B5AF1FF1B26F007EB7CF /* LpcAbsCurve.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B4061FF1B26F007EB7CF /* LpcAbsCurve.cc */; };
+		26D3B5B01FF1B26F007EB7CF /* LpcBranchCollection.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B4071FF1B26F007EB7CF /* LpcBranchCollection.cc */; };
+		26D3B5B11FF1B26F007EB7CF /* LpcPathLength.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B4081FF1B26F007EB7CF /* LpcPathLength.cc */; };
+		26D3B5B21FF1B26F007EB7CF /* LpcLineFitter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B4091FF1B26F007EB7CF /* LpcLineFitter.cc */; };
+		26D3B5B31FF1B26F007EB7CF /* LpcShowerAlgorithm.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B40A1FF1B26F007EB7CF /* LpcShowerAlgorithm.cc */; };
+		26D3B5B41FF1B26F007EB7CF /* LpcProcess.cc in Sources */ = {isa = PBXBuildFile; fileRef = 26D3B40B1FF1B26F007EB7CF /* LpcProcess.cc */; };
+		26D3B8681FF1B366007EB7CF /* Eigen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D3B0511FF1B11F007EB7CF /* Eigen.framework */; };
+		26D3B9D41FF1B40F007EB7CF /* CholmodSupport in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B86A1FF1B40F007EB7CF /* CholmodSupport */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9D51FF1B40F007EB7CF /* StdVector in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B86B1FF1B40F007EB7CF /* StdVector */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9D61FF1B40F007EB7CF /* StdDeque in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B86C1FF1B40F007EB7CF /* StdDeque */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9D81FF1B40F007EB7CF /* Core in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B86E1FF1B40F007EB7CF /* Core */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9D91FF1B40F007EB7CF /* SparseLU in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B86F1FF1B40F007EB7CF /* SparseLU */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9DA1FF1B40F007EB7CF /* OrderingMethods in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B8701FF1B40F007EB7CF /* OrderingMethods */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9DB1FF1B40F007EB7CF /* Array in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B8711FF1B40F007EB7CF /* Array */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9DC1FF1B40F007EB7CF /* QtAlignedMalloc in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B8721FF1B40F007EB7CF /* QtAlignedMalloc */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9DD1FF1B40F007EB7CF /* Householder in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B8731FF1B40F007EB7CF /* Householder */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9DE1FF1B40F007EB7CF /* PardisoSupport in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B8741FF1B40F007EB7CF /* PardisoSupport */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9DF1FF1B40F007EB7CF /* LeastSquares in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B8751FF1B40F007EB7CF /* LeastSquares */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9E01FF1B40F007EB7CF /* SparseCore in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B8761FF1B40F007EB7CF /* SparseCore */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9E11FF1B40F007EB7CF /* Jacobi in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B8771FF1B40F007EB7CF /* Jacobi */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9E21FF1B40F007EB7CF /* Dense in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B8781FF1B40F007EB7CF /* Dense */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9E31FF1B40F007EB7CF /* SPQRSupport in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B8791FF1B40F007EB7CF /* SPQRSupport */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9E41FF1B40F007EB7CF /* QR in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B87A1FF1B40F007EB7CF /* QR */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9E51FF1B40F007EB7CF /* Eigen in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B87B1FF1B40F007EB7CF /* Eigen */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9E61FF1B40F007EB7CF /* Eigen2Support in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B87C1FF1B40F007EB7CF /* Eigen2Support */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9E71FF1B40F007EB7CF /* SparseQR in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B87D1FF1B40F007EB7CF /* SparseQR */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9E81FF1B40F007EB7CF /* SVD in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B87E1FF1B40F007EB7CF /* SVD */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9E91FF1B40F007EB7CF /* Cholesky in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B87F1FF1B40F007EB7CF /* Cholesky */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9EA1FF1B40F007EB7CF /* UmfPackSupport in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B8801FF1B40F007EB7CF /* UmfPackSupport */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9EC1FF1B40F007EB7CF /* IterativeLinearSolvers in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B8821FF1B40F007EB7CF /* IterativeLinearSolvers */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9ED1FF1B40F007EB7CF /* LU in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B8831FF1B40F007EB7CF /* LU */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9EE1FF1B40F007EB7CF /* Sparse in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B8841FF1B40F007EB7CF /* Sparse */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9EF1FF1B40F007EB7CF /* Geometry in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B8851FF1B40F007EB7CF /* Geometry */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9F01FF1B40F007EB7CF /* SuperLUSupport in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B8861FF1B40F007EB7CF /* SuperLUSupport */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9F11FF1B40F007EB7CF /* StdList in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B8871FF1B40F007EB7CF /* StdList */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9F21FF1B40F007EB7CF /* MetisSupport in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B8881FF1B40F007EB7CF /* MetisSupport */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9F31FF1B40F007EB7CF /* SparseCholesky in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B8891FF1B40F007EB7CF /* SparseCholesky */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9F41FF1B40F007EB7CF /* Eigenvalues in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B88A1FF1B40F007EB7CF /* Eigenvalues */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3B9F51FF1B40F007EB7CF /* PaStiXSupport in Headers */ = {isa = PBXBuildFile; fileRef = 26D3B88B1FF1B40F007EB7CF /* PaStiXSupport */; settings = {ATTRIBUTES = (Public, ); }; };
+		26D3BB1C1FF1B4E5007EB7CF /* src in CopyFiles */ = {isa = PBXBuildFile; fileRef = 26D3BB191FF1B4BA007EB7CF /* src */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		26D3B0591FF1B14E007EB7CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26D3A7841FF16577007EB7CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26D3B0501FF1B11F007EB7CF;
+			remoteInfo = Eigen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		26D3AEDA1FF1ACEB007EB7CF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = LACE.framework/Headers;
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D3BB1B1FF1B4DC007EB7CF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Eigen.framework/Headers;
+			dstSubfolderSpec = 16;
+			files = (
+				26D3BB1C1FF1B4E5007EB7CF /* src in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		26D3A78D1FF16577007EB7CF /* LACE_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LACE_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		26D3A7901FF16577007EB7CF /* LACE_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LACE_iOS.h; sourceTree = "<group>"; };
+		26D3A78D1FF16577007EB7CF /* LACE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LACE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26D3A7901FF16577007EB7CF /* LACE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LACE.h; sourceTree = "<group>"; };
 		26D3A7911FF16577007EB7CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26D3B0511FF1B11F007EB7CF /* Eigen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Eigen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26D3B0531FF1B11F007EB7CF /* Eigen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Eigen.h; sourceTree = "<group>"; };
+		26D3B0541FF1B11F007EB7CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26D3B2371FF1B26F007EB7CF /* configure */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = configure; sourceTree = "<group>"; };
+		26D3B2381FF1B26F007EB7CF /* LACEMain.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LACEMain.cc; sourceTree = "<group>"; };
+		26D3B2391FF1B26F007EB7CF /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		26D3B23A1FF1B26F007EB7CF /* pathlib.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = pathlib.sh; sourceTree = "<group>"; };
+		26D3B23C1FF1B26F007EB7CF /* ep770MeV.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ep770MeV.txt; sourceTree = "<group>"; };
+		26D3B23D1FF1B26F007EB7CF /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		26D3B23E1FF1B26F007EB7CF /* mup770MeV.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mup770MeV.txt; sourceTree = "<group>"; };
+		26D3B23F1FF1B26F007EB7CF /* mupPars.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mupPars.txt; sourceTree = "<group>"; };
+		26D3B2401FF1B26F007EB7CF /* epPars.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = epPars.txt; sourceTree = "<group>"; };
+		26D3B2431FF1B26F007EB7CF /* LpcClusterData.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcClusterData.hh; sourceTree = "<group>"; };
+		26D3B2441FF1B26F007EB7CF /* LpcLineClusterAlgorithm.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcLineClusterAlgorithm.hh; sourceTree = "<group>"; };
+		26D3B2451FF1B26F007EB7CF /* LpcRun.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcRun.hh; sourceTree = "<group>"; };
+		26D3B2461FF1B26F007EB7CF /* LpcRootInput.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcRootInput.hh; sourceTree = "<group>"; };
+		26D3B2471FF1B26F007EB7CF /* LpcTextInput.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcTextInput.hh; sourceTree = "<group>"; };
+		26D3B2481FF1B26F007EB7CF /* LpcAbsOutput.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcAbsOutput.hh; sourceTree = "<group>"; };
+		26D3B2491FF1B26F007EB7CF /* LpcPoint.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcPoint.hh; sourceTree = "<group>"; };
+		26D3B24A1FF1B26F007EB7CF /* LpcCurve.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcCurve.hh; sourceTree = "<group>"; };
+		26D3B24B1FF1B26F007EB7CF /* LpcHitCollection.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcHitCollection.hh; sourceTree = "<group>"; };
+		26D3B24C1FF1B26F007EB7CF /* LpcSingleClusterAlgorithm.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcSingleClusterAlgorithm.hh; sourceTree = "<group>"; };
+		26D3B24D1FF1B26F007EB7CF /* LpcAlgorithm.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcAlgorithm.hh; sourceTree = "<group>"; };
+		26D3B24E1FF1B26F007EB7CF /* LpcAbsClusterAlgorithm.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcAbsClusterAlgorithm.hh; sourceTree = "<group>"; };
+		26D3B24F1FF1B26F007EB7CF /* LpcFunctions.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcFunctions.hh; sourceTree = "<group>"; };
+		26D3B2501FF1B26F007EB7CF /* LpcRootOutput.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcRootOutput.hh; sourceTree = "<group>"; };
+		26D3B2511FF1B26F007EB7CF /* LpcParameters.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcParameters.hh; sourceTree = "<group>"; };
+		26D3B2521FF1B26F007EB7CF /* LpcBranchAlgorithm.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcBranchAlgorithm.hh; sourceTree = "<group>"; };
+		26D3B2531FF1B26F007EB7CF /* LpcAbsCurve.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcAbsCurve.hh; sourceTree = "<group>"; };
+		26D3B2541FF1B26F007EB7CF /* LpcLineFitter.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcLineFitter.hh; sourceTree = "<group>"; };
+		26D3B2551FF1B26F007EB7CF /* LpcPathLength.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcPathLength.hh; sourceTree = "<group>"; };
+		26D3B2561FF1B26F007EB7CF /* LpcBranchCollection.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcBranchCollection.hh; sourceTree = "<group>"; };
+		26D3B2571FF1B26F007EB7CF /* LpcShowerAlgorithm.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcShowerAlgorithm.hh; sourceTree = "<group>"; };
+		26D3B2581FF1B26F007EB7CF /* LpcProcess.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcProcess.hh; sourceTree = "<group>"; };
+		26D3B2591FF1B26F007EB7CF /* LpcInputFactory.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcInputFactory.hh; sourceTree = "<group>"; };
+		26D3B25A1FF1B26F007EB7CF /* LpcBinRange.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcBinRange.hh; sourceTree = "<group>"; };
+		26D3B25B1FF1B26F007EB7CF /* LpcConvexHull.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcConvexHull.hh; sourceTree = "<group>"; };
+		26D3B25C1FF1B26F007EB7CF /* LpcAbsInput.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcAbsInput.hh; sourceTree = "<group>"; };
+		26D3B25D1FF1B26F007EB7CF /* LpcEvent.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcEvent.hh; sourceTree = "<group>"; };
+		26D3B25E1FF1B26F007EB7CF /* LpcCluster.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcCluster.hh; sourceTree = "<group>"; };
+		26D3B25F1FF1B26F007EB7CF /* LpcBranch.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcBranch.hh; sourceTree = "<group>"; };
+		26D3B2601FF1B26F007EB7CF /* LpcVertex.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcVertex.hh; sourceTree = "<group>"; };
+		26D3B2611FF1B26F007EB7CF /* LpcFeatures.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcFeatures.hh; sourceTree = "<group>"; };
+		26D3B2621FF1B26F007EB7CF /* LpcResiduals.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcResiduals.hh; sourceTree = "<group>"; };
+		26D3B2631FF1B26F007EB7CF /* LpcHit.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcHit.hh; sourceTree = "<group>"; };
+		26D3B2641FF1B26F007EB7CF /* LpcOutputFactory.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcOutputFactory.hh; sourceTree = "<group>"; };
+		26D3B2651FF1B26F007EB7CF /* LpcLineSegment.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcLineSegment.hh; sourceTree = "<group>"; };
+		26D3B2661FF1B26F007EB7CF /* LpcTextOutput.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LpcTextOutput.hh; sourceTree = "<group>"; };
+		26D3B3D21FF1B26F007EB7CF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		26D3B3D41FF1B26F007EB7CF /* plotFullEvent.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plotFullEvent.C; sourceTree = "<group>"; };
+		26D3B3D51FF1B26F007EB7CF /* plotFullEvents.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plotFullEvents.C; sourceTree = "<group>"; };
+		26D3B3D61FF1B26F007EB7CF /* plotCosAngle.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plotCosAngle.C; sourceTree = "<group>"; };
+		26D3B3D71FF1B26F007EB7CF /* plotEvent.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plotEvent.C; sourceTree = "<group>"; };
+		26D3B3D81FF1B26F007EB7CF /* plotEnergies.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plotEnergies.C; sourceTree = "<group>"; };
+		26D3B3D91FF1B26F007EB7CF /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		26D3B3DA1FF1B26F007EB7CF /* plotNClusters.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plotNClusters.C; sourceTree = "<group>"; };
+		26D3B3DB1FF1B26F007EB7CF /* plotHitResiduals.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plotHitResiduals.C; sourceTree = "<group>"; };
+		26D3B3DC1FF1B26F007EB7CF /* plotVertex.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plotVertex.C; sourceTree = "<group>"; };
+		26D3B3DD1FF1B26F007EB7CF /* plotConvexHull.C */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plotConvexHull.C; sourceTree = "<group>"; };
+		26D3B3DE1FF1B26F007EB7CF /* LICENSE_1_0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_1_0.txt; sourceTree = "<group>"; };
+		26D3B3DF1FF1B26F007EB7CF /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		26D3B3E11FF1B26F007EB7CF /* parameters.dox */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = parameters.dox; sourceTree = "<group>"; };
+		26D3B3E21FF1B26F007EB7CF /* history.dox */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = history.dox; sourceTree = "<group>"; };
+		26D3B3E31FF1B26F007EB7CF /* mainpage.dox */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mainpage.dox; sourceTree = "<group>"; };
+		26D3B3E41FF1B26F007EB7CF /* lpctree.dox */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lpctree.dox; sourceTree = "<group>"; };
+		26D3B3E51FF1B26F007EB7CF /* rootin.dox */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rootin.dox; sourceTree = "<group>"; };
+		26D3B3E61FF1B26F007EB7CF /* clstree.dox */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = clstree.dox; sourceTree = "<group>"; };
+		26D3B3E71FF1B26F007EB7CF /* vtxtree.dox */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vtxtree.dox; sourceTree = "<group>"; };
+		26D3B3E81FF1B26F007EB7CF /* textoutput.dox */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = textoutput.dox; sourceTree = "<group>"; };
+		26D3B3E91FF1B26F007EB7CF /* Doxyfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Doxyfile; sourceTree = "<group>"; };
+		26D3B3EB1FF1B26F007EB7CF /* LpcParameters.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcParameters.cc; sourceTree = "<group>"; };
+		26D3B3EC1FF1B26F007EB7CF /* LpcBranchAlgorithm.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcBranchAlgorithm.cc; sourceTree = "<group>"; };
+		26D3B3ED1FF1B26F007EB7CF /* LpcAlgorithm.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcAlgorithm.cc; sourceTree = "<group>"; };
+		26D3B3EE1FF1B26F007EB7CF /* LpcFunctions.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcFunctions.cc; sourceTree = "<group>"; };
+		26D3B3EF1FF1B26F007EB7CF /* LpcRootOutput.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcRootOutput.cc; sourceTree = "<group>"; };
+		26D3B3F01FF1B26F007EB7CF /* LpcTextInput.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcTextInput.cc; sourceTree = "<group>"; };
+		26D3B3F11FF1B26F007EB7CF /* LpcAbsOutput.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcAbsOutput.cc; sourceTree = "<group>"; };
+		26D3B3F21FF1B26F007EB7CF /* LpcCurve.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcCurve.cc; sourceTree = "<group>"; };
+		26D3B3F31FF1B26F007EB7CF /* LpcPoint.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcPoint.cc; sourceTree = "<group>"; };
+		26D3B3F41FF1B26F007EB7CF /* LpcSingleClusterAlgorithm.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcSingleClusterAlgorithm.cc; sourceTree = "<group>"; };
+		26D3B3F51FF1B26F007EB7CF /* LpcHitCollection.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcHitCollection.cc; sourceTree = "<group>"; };
+		26D3B3F61FF1B26F007EB7CF /* LpcLineClusterAlgorithm.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcLineClusterAlgorithm.cc; sourceTree = "<group>"; };
+		26D3B3F71FF1B26F007EB7CF /* LpcClusterData.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcClusterData.cc; sourceTree = "<group>"; };
+		26D3B3F81FF1B26F007EB7CF /* LpcRun.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcRun.cc; sourceTree = "<group>"; };
+		26D3B3F91FF1B26F007EB7CF /* LpcRootInput.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcRootInput.cc; sourceTree = "<group>"; };
+		26D3B3FA1FF1B26F007EB7CF /* LpcHit.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcHit.cc; sourceTree = "<group>"; };
+		26D3B3FB1FF1B26F007EB7CF /* LpcLineSegment.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcLineSegment.cc; sourceTree = "<group>"; };
+		26D3B3FC1FF1B26F007EB7CF /* LpcOutputFactory.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcOutputFactory.cc; sourceTree = "<group>"; };
+		26D3B3FD1FF1B26F007EB7CF /* LpcTextOutput.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcTextOutput.cc; sourceTree = "<group>"; };
+		26D3B3FE1FF1B26F007EB7CF /* LpcVertex.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcVertex.cc; sourceTree = "<group>"; };
+		26D3B3FF1FF1B26F007EB7CF /* LpcBranch.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcBranch.cc; sourceTree = "<group>"; };
+		26D3B4001FF1B26F007EB7CF /* LpcFeatures.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcFeatures.cc; sourceTree = "<group>"; };
+		26D3B4011FF1B26F007EB7CF /* LpcResiduals.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcResiduals.cc; sourceTree = "<group>"; };
+		26D3B4021FF1B26F007EB7CF /* LpcInputFactory.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcInputFactory.cc; sourceTree = "<group>"; };
+		26D3B4031FF1B26F007EB7CF /* LpcConvexHull.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcConvexHull.cc; sourceTree = "<group>"; };
+		26D3B4041FF1B26F007EB7CF /* LpcEvent.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcEvent.cc; sourceTree = "<group>"; };
+		26D3B4051FF1B26F007EB7CF /* LpcCluster.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcCluster.cc; sourceTree = "<group>"; };
+		26D3B4061FF1B26F007EB7CF /* LpcAbsCurve.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcAbsCurve.cc; sourceTree = "<group>"; };
+		26D3B4071FF1B26F007EB7CF /* LpcBranchCollection.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcBranchCollection.cc; sourceTree = "<group>"; };
+		26D3B4081FF1B26F007EB7CF /* LpcPathLength.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcPathLength.cc; sourceTree = "<group>"; };
+		26D3B4091FF1B26F007EB7CF /* LpcLineFitter.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcLineFitter.cc; sourceTree = "<group>"; };
+		26D3B40A1FF1B26F007EB7CF /* LpcShowerAlgorithm.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcShowerAlgorithm.cc; sourceTree = "<group>"; };
+		26D3B40B1FF1B26F007EB7CF /* LpcProcess.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LpcProcess.cc; sourceTree = "<group>"; };
+		26D3B86A1FF1B40F007EB7CF /* CholmodSupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CholmodSupport; sourceTree = "<group>"; };
+		26D3B86B1FF1B40F007EB7CF /* StdVector */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StdVector; sourceTree = "<group>"; };
+		26D3B86C1FF1B40F007EB7CF /* StdDeque */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StdDeque; sourceTree = "<group>"; };
+		26D3B86D1FF1B40F007EB7CF /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		26D3B86E1FF1B40F007EB7CF /* Core */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Core; sourceTree = "<group>"; };
+		26D3B86F1FF1B40F007EB7CF /* SparseLU */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SparseLU; sourceTree = "<group>"; };
+		26D3B8701FF1B40F007EB7CF /* OrderingMethods */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OrderingMethods; sourceTree = "<group>"; };
+		26D3B8711FF1B40F007EB7CF /* Array */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Array; sourceTree = "<group>"; };
+		26D3B8721FF1B40F007EB7CF /* QtAlignedMalloc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QtAlignedMalloc; sourceTree = "<group>"; };
+		26D3B8731FF1B40F007EB7CF /* Householder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Householder; sourceTree = "<group>"; };
+		26D3B8741FF1B40F007EB7CF /* PardisoSupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PardisoSupport; sourceTree = "<group>"; };
+		26D3B8751FF1B40F007EB7CF /* LeastSquares */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LeastSquares; sourceTree = "<group>"; };
+		26D3B8761FF1B40F007EB7CF /* SparseCore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SparseCore; sourceTree = "<group>"; };
+		26D3B8771FF1B40F007EB7CF /* Jacobi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jacobi; sourceTree = "<group>"; };
+		26D3B8781FF1B40F007EB7CF /* Dense */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dense; sourceTree = "<group>"; };
+		26D3B8791FF1B40F007EB7CF /* SPQRSupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SPQRSupport; sourceTree = "<group>"; };
+		26D3B87A1FF1B40F007EB7CF /* QR */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QR; sourceTree = "<group>"; };
+		26D3B87B1FF1B40F007EB7CF /* Eigen */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Eigen; sourceTree = "<group>"; };
+		26D3B87C1FF1B40F007EB7CF /* Eigen2Support */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Eigen2Support; sourceTree = "<group>"; };
+		26D3B87D1FF1B40F007EB7CF /* SparseQR */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SparseQR; sourceTree = "<group>"; };
+		26D3B87E1FF1B40F007EB7CF /* SVD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SVD; sourceTree = "<group>"; };
+		26D3B87F1FF1B40F007EB7CF /* Cholesky */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cholesky; sourceTree = "<group>"; };
+		26D3B8801FF1B40F007EB7CF /* UmfPackSupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UmfPackSupport; sourceTree = "<group>"; };
+		26D3B8811FF1B40F007EB7CF /* EigenLicense_MPL2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EigenLicense_MPL2.txt; sourceTree = "<group>"; };
+		26D3B8821FF1B40F007EB7CF /* IterativeLinearSolvers */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IterativeLinearSolvers; sourceTree = "<group>"; };
+		26D3B8831FF1B40F007EB7CF /* LU */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LU; sourceTree = "<group>"; };
+		26D3B8841FF1B40F007EB7CF /* Sparse */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sparse; sourceTree = "<group>"; };
+		26D3B8851FF1B40F007EB7CF /* Geometry */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Geometry; sourceTree = "<group>"; };
+		26D3B8861FF1B40F007EB7CF /* SuperLUSupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SuperLUSupport; sourceTree = "<group>"; };
+		26D3B8871FF1B40F007EB7CF /* StdList */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StdList; sourceTree = "<group>"; };
+		26D3B8881FF1B40F007EB7CF /* MetisSupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MetisSupport; sourceTree = "<group>"; };
+		26D3B8891FF1B40F007EB7CF /* SparseCholesky */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SparseCholesky; sourceTree = "<group>"; };
+		26D3B88A1FF1B40F007EB7CF /* Eigenvalues */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Eigenvalues; sourceTree = "<group>"; };
+		26D3B88B1FF1B40F007EB7CF /* PaStiXSupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PaStiXSupport; sourceTree = "<group>"; };
+		26D3BB191FF1B4BA007EB7CF /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		26D3A7891FF16577007EB7CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26D3B8681FF1B366007EB7CF /* Eigen.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D3B04D1FF1B11F007EB7CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -30,15 +313,19 @@
 		26D3A7831FF16577007EB7CF = {
 			isa = PBXGroup;
 			children = (
+				26D3B2361FF1B26F007EB7CF /* LACE */,
 				26D3A78F1FF16577007EB7CF /* LACE-iOS */,
+				26D3B0521FF1B11F007EB7CF /* Eigen */,
 				26D3A78E1FF16577007EB7CF /* Products */,
+				26D3B8671FF1B366007EB7CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		26D3A78E1FF16577007EB7CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				26D3A78D1FF16577007EB7CF /* LACE_iOS.framework */,
+				26D3A78D1FF16577007EB7CF /* LACE.framework */,
+				26D3B0511FF1B11F007EB7CF /* Eigen.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,10 +333,224 @@
 		26D3A78F1FF16577007EB7CF /* LACE-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				26D3A7901FF16577007EB7CF /* LACE_iOS.h */,
+				26D3A7901FF16577007EB7CF /* LACE.h */,
 				26D3A7911FF16577007EB7CF /* Info.plist */,
 			);
 			path = "LACE-iOS";
+			sourceTree = "<group>";
+		};
+		26D3B0521FF1B11F007EB7CF /* Eigen */ = {
+			isa = PBXGroup;
+			children = (
+				26D3B0531FF1B11F007EB7CF /* Eigen.h */,
+				26D3B0541FF1B11F007EB7CF /* Info.plist */,
+			);
+			path = Eigen;
+			sourceTree = "<group>";
+		};
+		26D3B2361FF1B26F007EB7CF /* LACE */ = {
+			isa = PBXGroup;
+			children = (
+				26D3B8691FF1B40F007EB7CF /* Eigen */,
+				26D3B2371FF1B26F007EB7CF /* configure */,
+				26D3B2381FF1B26F007EB7CF /* LACEMain.cc */,
+				26D3B2391FF1B26F007EB7CF /* Makefile */,
+				26D3B23A1FF1B26F007EB7CF /* pathlib.sh */,
+				26D3B23B1FF1B26F007EB7CF /* example */,
+				26D3B2411FF1B26F007EB7CF /* include */,
+				26D3B3D21FF1B26F007EB7CF /* README.md */,
+				26D3B3D31FF1B26F007EB7CF /* macros */,
+				26D3B3DE1FF1B26F007EB7CF /* LICENSE_1_0.txt */,
+				26D3B3DF1FF1B26F007EB7CF /* .gitignore */,
+				26D3B3E01FF1B26F007EB7CF /* doc */,
+				26D3B3E91FF1B26F007EB7CF /* Doxyfile */,
+				26D3B3EA1FF1B26F007EB7CF /* src */,
+			);
+			path = LACE;
+			sourceTree = "<group>";
+		};
+		26D3B23B1FF1B26F007EB7CF /* example */ = {
+			isa = PBXGroup;
+			children = (
+				26D3B23C1FF1B26F007EB7CF /* ep770MeV.txt */,
+				26D3B23D1FF1B26F007EB7CF /* README */,
+				26D3B23E1FF1B26F007EB7CF /* mup770MeV.txt */,
+				26D3B23F1FF1B26F007EB7CF /* mupPars.txt */,
+				26D3B2401FF1B26F007EB7CF /* epPars.txt */,
+			);
+			path = example;
+			sourceTree = "<group>";
+		};
+		26D3B2411FF1B26F007EB7CF /* include */ = {
+			isa = PBXGroup;
+			children = (
+				26D3B2421FF1B26F007EB7CF /* LACE */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		26D3B2421FF1B26F007EB7CF /* LACE */ = {
+			isa = PBXGroup;
+			children = (
+				26D3B2431FF1B26F007EB7CF /* LpcClusterData.hh */,
+				26D3B2441FF1B26F007EB7CF /* LpcLineClusterAlgorithm.hh */,
+				26D3B2451FF1B26F007EB7CF /* LpcRun.hh */,
+				26D3B2461FF1B26F007EB7CF /* LpcRootInput.hh */,
+				26D3B2471FF1B26F007EB7CF /* LpcTextInput.hh */,
+				26D3B2481FF1B26F007EB7CF /* LpcAbsOutput.hh */,
+				26D3B2491FF1B26F007EB7CF /* LpcPoint.hh */,
+				26D3B24A1FF1B26F007EB7CF /* LpcCurve.hh */,
+				26D3B24B1FF1B26F007EB7CF /* LpcHitCollection.hh */,
+				26D3B24C1FF1B26F007EB7CF /* LpcSingleClusterAlgorithm.hh */,
+				26D3B24D1FF1B26F007EB7CF /* LpcAlgorithm.hh */,
+				26D3B24E1FF1B26F007EB7CF /* LpcAbsClusterAlgorithm.hh */,
+				26D3B24F1FF1B26F007EB7CF /* LpcFunctions.hh */,
+				26D3B2501FF1B26F007EB7CF /* LpcRootOutput.hh */,
+				26D3B2511FF1B26F007EB7CF /* LpcParameters.hh */,
+				26D3B2521FF1B26F007EB7CF /* LpcBranchAlgorithm.hh */,
+				26D3B2531FF1B26F007EB7CF /* LpcAbsCurve.hh */,
+				26D3B2541FF1B26F007EB7CF /* LpcLineFitter.hh */,
+				26D3B2551FF1B26F007EB7CF /* LpcPathLength.hh */,
+				26D3B2561FF1B26F007EB7CF /* LpcBranchCollection.hh */,
+				26D3B2571FF1B26F007EB7CF /* LpcShowerAlgorithm.hh */,
+				26D3B2581FF1B26F007EB7CF /* LpcProcess.hh */,
+				26D3B2591FF1B26F007EB7CF /* LpcInputFactory.hh */,
+				26D3B25A1FF1B26F007EB7CF /* LpcBinRange.hh */,
+				26D3B25B1FF1B26F007EB7CF /* LpcConvexHull.hh */,
+				26D3B25C1FF1B26F007EB7CF /* LpcAbsInput.hh */,
+				26D3B25D1FF1B26F007EB7CF /* LpcEvent.hh */,
+				26D3B25E1FF1B26F007EB7CF /* LpcCluster.hh */,
+				26D3B25F1FF1B26F007EB7CF /* LpcBranch.hh */,
+				26D3B2601FF1B26F007EB7CF /* LpcVertex.hh */,
+				26D3B2611FF1B26F007EB7CF /* LpcFeatures.hh */,
+				26D3B2621FF1B26F007EB7CF /* LpcResiduals.hh */,
+				26D3B2631FF1B26F007EB7CF /* LpcHit.hh */,
+				26D3B2641FF1B26F007EB7CF /* LpcOutputFactory.hh */,
+				26D3B2651FF1B26F007EB7CF /* LpcLineSegment.hh */,
+				26D3B2661FF1B26F007EB7CF /* LpcTextOutput.hh */,
+			);
+			path = LACE;
+			sourceTree = "<group>";
+		};
+		26D3B3D31FF1B26F007EB7CF /* macros */ = {
+			isa = PBXGroup;
+			children = (
+				26D3B3D41FF1B26F007EB7CF /* plotFullEvent.C */,
+				26D3B3D51FF1B26F007EB7CF /* plotFullEvents.C */,
+				26D3B3D61FF1B26F007EB7CF /* plotCosAngle.C */,
+				26D3B3D71FF1B26F007EB7CF /* plotEvent.C */,
+				26D3B3D81FF1B26F007EB7CF /* plotEnergies.C */,
+				26D3B3D91FF1B26F007EB7CF /* README */,
+				26D3B3DA1FF1B26F007EB7CF /* plotNClusters.C */,
+				26D3B3DB1FF1B26F007EB7CF /* plotHitResiduals.C */,
+				26D3B3DC1FF1B26F007EB7CF /* plotVertex.C */,
+				26D3B3DD1FF1B26F007EB7CF /* plotConvexHull.C */,
+			);
+			path = macros;
+			sourceTree = "<group>";
+		};
+		26D3B3E01FF1B26F007EB7CF /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				26D3B3E11FF1B26F007EB7CF /* parameters.dox */,
+				26D3B3E21FF1B26F007EB7CF /* history.dox */,
+				26D3B3E31FF1B26F007EB7CF /* mainpage.dox */,
+				26D3B3E41FF1B26F007EB7CF /* lpctree.dox */,
+				26D3B3E51FF1B26F007EB7CF /* rootin.dox */,
+				26D3B3E61FF1B26F007EB7CF /* clstree.dox */,
+				26D3B3E71FF1B26F007EB7CF /* vtxtree.dox */,
+				26D3B3E81FF1B26F007EB7CF /* textoutput.dox */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		26D3B3EA1FF1B26F007EB7CF /* src */ = {
+			isa = PBXGroup;
+			children = (
+				26D3B3EB1FF1B26F007EB7CF /* LpcParameters.cc */,
+				26D3B3EC1FF1B26F007EB7CF /* LpcBranchAlgorithm.cc */,
+				26D3B3ED1FF1B26F007EB7CF /* LpcAlgorithm.cc */,
+				26D3B3EE1FF1B26F007EB7CF /* LpcFunctions.cc */,
+				26D3B3EF1FF1B26F007EB7CF /* LpcRootOutput.cc */,
+				26D3B3F01FF1B26F007EB7CF /* LpcTextInput.cc */,
+				26D3B3F11FF1B26F007EB7CF /* LpcAbsOutput.cc */,
+				26D3B3F21FF1B26F007EB7CF /* LpcCurve.cc */,
+				26D3B3F31FF1B26F007EB7CF /* LpcPoint.cc */,
+				26D3B3F41FF1B26F007EB7CF /* LpcSingleClusterAlgorithm.cc */,
+				26D3B3F51FF1B26F007EB7CF /* LpcHitCollection.cc */,
+				26D3B3F61FF1B26F007EB7CF /* LpcLineClusterAlgorithm.cc */,
+				26D3B3F71FF1B26F007EB7CF /* LpcClusterData.cc */,
+				26D3B3F81FF1B26F007EB7CF /* LpcRun.cc */,
+				26D3B3F91FF1B26F007EB7CF /* LpcRootInput.cc */,
+				26D3B3FA1FF1B26F007EB7CF /* LpcHit.cc */,
+				26D3B3FB1FF1B26F007EB7CF /* LpcLineSegment.cc */,
+				26D3B3FC1FF1B26F007EB7CF /* LpcOutputFactory.cc */,
+				26D3B3FD1FF1B26F007EB7CF /* LpcTextOutput.cc */,
+				26D3B3FE1FF1B26F007EB7CF /* LpcVertex.cc */,
+				26D3B3FF1FF1B26F007EB7CF /* LpcBranch.cc */,
+				26D3B4001FF1B26F007EB7CF /* LpcFeatures.cc */,
+				26D3B4011FF1B26F007EB7CF /* LpcResiduals.cc */,
+				26D3B4021FF1B26F007EB7CF /* LpcInputFactory.cc */,
+				26D3B4031FF1B26F007EB7CF /* LpcConvexHull.cc */,
+				26D3B4041FF1B26F007EB7CF /* LpcEvent.cc */,
+				26D3B4051FF1B26F007EB7CF /* LpcCluster.cc */,
+				26D3B4061FF1B26F007EB7CF /* LpcAbsCurve.cc */,
+				26D3B4071FF1B26F007EB7CF /* LpcBranchCollection.cc */,
+				26D3B4081FF1B26F007EB7CF /* LpcPathLength.cc */,
+				26D3B4091FF1B26F007EB7CF /* LpcLineFitter.cc */,
+				26D3B40A1FF1B26F007EB7CF /* LpcShowerAlgorithm.cc */,
+				26D3B40B1FF1B26F007EB7CF /* LpcProcess.cc */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		26D3B8671FF1B366007EB7CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		26D3B8691FF1B40F007EB7CF /* Eigen */ = {
+			isa = PBXGroup;
+			children = (
+				26D3BB191FF1B4BA007EB7CF /* src */,
+				26D3B86A1FF1B40F007EB7CF /* CholmodSupport */,
+				26D3B86B1FF1B40F007EB7CF /* StdVector */,
+				26D3B86C1FF1B40F007EB7CF /* StdDeque */,
+				26D3B86D1FF1B40F007EB7CF /* CMakeLists.txt */,
+				26D3B86E1FF1B40F007EB7CF /* Core */,
+				26D3B86F1FF1B40F007EB7CF /* SparseLU */,
+				26D3B8701FF1B40F007EB7CF /* OrderingMethods */,
+				26D3B8711FF1B40F007EB7CF /* Array */,
+				26D3B8721FF1B40F007EB7CF /* QtAlignedMalloc */,
+				26D3B8731FF1B40F007EB7CF /* Householder */,
+				26D3B8741FF1B40F007EB7CF /* PardisoSupport */,
+				26D3B8751FF1B40F007EB7CF /* LeastSquares */,
+				26D3B8761FF1B40F007EB7CF /* SparseCore */,
+				26D3B8771FF1B40F007EB7CF /* Jacobi */,
+				26D3B8781FF1B40F007EB7CF /* Dense */,
+				26D3B8791FF1B40F007EB7CF /* SPQRSupport */,
+				26D3B87A1FF1B40F007EB7CF /* QR */,
+				26D3B87B1FF1B40F007EB7CF /* Eigen */,
+				26D3B87C1FF1B40F007EB7CF /* Eigen2Support */,
+				26D3B87D1FF1B40F007EB7CF /* SparseQR */,
+				26D3B87E1FF1B40F007EB7CF /* SVD */,
+				26D3B87F1FF1B40F007EB7CF /* Cholesky */,
+				26D3B8801FF1B40F007EB7CF /* UmfPackSupport */,
+				26D3B8811FF1B40F007EB7CF /* EigenLicense_MPL2.txt */,
+				26D3B8821FF1B40F007EB7CF /* IterativeLinearSolvers */,
+				26D3B8831FF1B40F007EB7CF /* LU */,
+				26D3B8841FF1B40F007EB7CF /* Sparse */,
+				26D3B8851FF1B40F007EB7CF /* Geometry */,
+				26D3B8861FF1B40F007EB7CF /* SuperLUSupport */,
+				26D3B8871FF1B40F007EB7CF /* StdList */,
+				26D3B8881FF1B40F007EB7CF /* MetisSupport */,
+				26D3B8891FF1B40F007EB7CF /* SparseCholesky */,
+				26D3B88A1FF1B40F007EB7CF /* Eigenvalues */,
+				26D3B88B1FF1B40F007EB7CF /* PaStiXSupport */,
+			);
+			path = Eigen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,29 +560,126 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26D3A7921FF16577007EB7CF /* LACE_iOS.h in Headers */,
+				26D3B4181FF1B26F007EB7CF /* LpcRootInput.hh in Headers */,
+				26D3B4231FF1B26F007EB7CF /* LpcParameters.hh in Headers */,
+				26D3B4151FF1B26F007EB7CF /* LpcClusterData.hh in Headers */,
+				26D3B41B1FF1B26F007EB7CF /* LpcPoint.hh in Headers */,
+				26D3B4211FF1B26F007EB7CF /* LpcFunctions.hh in Headers */,
+				26D3B41C1FF1B26F007EB7CF /* LpcCurve.hh in Headers */,
+				26D3A7921FF16577007EB7CF /* LACE.h in Headers */,
+				26D3B4351FF1B26F007EB7CF /* LpcHit.hh in Headers */,
+				26D3B41D1FF1B26F007EB7CF /* LpcHitCollection.hh in Headers */,
+				26D3B4201FF1B26F007EB7CF /* LpcAbsClusterAlgorithm.hh in Headers */,
+				26D3B4221FF1B26F007EB7CF /* LpcRootOutput.hh in Headers */,
+				26D3B4331FF1B26F007EB7CF /* LpcFeatures.hh in Headers */,
+				26D3B4341FF1B26F007EB7CF /* LpcResiduals.hh in Headers */,
+				26D3B41E1FF1B26F007EB7CF /* LpcSingleClusterAlgorithm.hh in Headers */,
+				26D3B41F1FF1B26F007EB7CF /* LpcAlgorithm.hh in Headers */,
+				26D3B4271FF1B26F007EB7CF /* LpcPathLength.hh in Headers */,
+				26D3B4301FF1B26F007EB7CF /* LpcCluster.hh in Headers */,
+				26D3B4371FF1B26F007EB7CF /* LpcLineSegment.hh in Headers */,
+				26D3B4191FF1B26F007EB7CF /* LpcTextInput.hh in Headers */,
+				26D3B4321FF1B26F007EB7CF /* LpcVertex.hh in Headers */,
+				26D3B4261FF1B26F007EB7CF /* LpcLineFitter.hh in Headers */,
+				26D3B4361FF1B26F007EB7CF /* LpcOutputFactory.hh in Headers */,
+				26D3B42C1FF1B26F007EB7CF /* LpcBinRange.hh in Headers */,
+				26D3B42B1FF1B26F007EB7CF /* LpcInputFactory.hh in Headers */,
+				26D3B4291FF1B26F007EB7CF /* LpcShowerAlgorithm.hh in Headers */,
+				26D3B4381FF1B26F007EB7CF /* LpcTextOutput.hh in Headers */,
+				26D3B41A1FF1B26F007EB7CF /* LpcAbsOutput.hh in Headers */,
+				26D3B4161FF1B26F007EB7CF /* LpcLineClusterAlgorithm.hh in Headers */,
+				26D3B4241FF1B26F007EB7CF /* LpcBranchAlgorithm.hh in Headers */,
+				26D3B42E1FF1B26F007EB7CF /* LpcAbsInput.hh in Headers */,
+				26D3B4311FF1B26F007EB7CF /* LpcBranch.hh in Headers */,
+				26D3B42F1FF1B26F007EB7CF /* LpcEvent.hh in Headers */,
+				26D3B4281FF1B26F007EB7CF /* LpcBranchCollection.hh in Headers */,
+				26D3B4251FF1B26F007EB7CF /* LpcAbsCurve.hh in Headers */,
+				26D3B4171FF1B26F007EB7CF /* LpcRun.hh in Headers */,
+				26D3B42A1FF1B26F007EB7CF /* LpcProcess.hh in Headers */,
+				26D3B42D1FF1B26F007EB7CF /* LpcConvexHull.hh in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D3B04E1FF1B11F007EB7CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26D3B0551FF1B11F007EB7CF /* Eigen.h in Headers */,
+				26D3B9EC1FF1B40F007EB7CF /* IterativeLinearSolvers in Headers */,
+				26D3B9D91FF1B40F007EB7CF /* SparseLU in Headers */,
+				26D3B9F21FF1B40F007EB7CF /* MetisSupport in Headers */,
+				26D3B9E41FF1B40F007EB7CF /* QR in Headers */,
+				26D3B9DC1FF1B40F007EB7CF /* QtAlignedMalloc in Headers */,
+				26D3B9F51FF1B40F007EB7CF /* PaStiXSupport in Headers */,
+				26D3B9DE1FF1B40F007EB7CF /* PardisoSupport in Headers */,
+				26D3B9E71FF1B40F007EB7CF /* SparseQR in Headers */,
+				26D3B9EF1FF1B40F007EB7CF /* Geometry in Headers */,
+				26D3B9DD1FF1B40F007EB7CF /* Householder in Headers */,
+				26D3B9DA1FF1B40F007EB7CF /* OrderingMethods in Headers */,
+				26D3B9E21FF1B40F007EB7CF /* Dense in Headers */,
+				26D3B9F11FF1B40F007EB7CF /* StdList in Headers */,
+				26D3B9E81FF1B40F007EB7CF /* SVD in Headers */,
+				26D3B9D61FF1B40F007EB7CF /* StdDeque in Headers */,
+				26D3B9F01FF1B40F007EB7CF /* SuperLUSupport in Headers */,
+				26D3B9E61FF1B40F007EB7CF /* Eigen2Support in Headers */,
+				26D3B9DB1FF1B40F007EB7CF /* Array in Headers */,
+				26D3B9D41FF1B40F007EB7CF /* CholmodSupport in Headers */,
+				26D3B9DF1FF1B40F007EB7CF /* LeastSquares in Headers */,
+				26D3B9F41FF1B40F007EB7CF /* Eigenvalues in Headers */,
+				26D3B9D81FF1B40F007EB7CF /* Core in Headers */,
+				26D3B9E01FF1B40F007EB7CF /* SparseCore in Headers */,
+				26D3B9E11FF1B40F007EB7CF /* Jacobi in Headers */,
+				26D3B9EA1FF1B40F007EB7CF /* UmfPackSupport in Headers */,
+				26D3B9E91FF1B40F007EB7CF /* Cholesky in Headers */,
+				26D3B9EE1FF1B40F007EB7CF /* Sparse in Headers */,
+				26D3B9E51FF1B40F007EB7CF /* Eigen in Headers */,
+				26D3B9E31FF1B40F007EB7CF /* SPQRSupport in Headers */,
+				26D3B9D51FF1B40F007EB7CF /* StdVector in Headers */,
+				26D3B9F31FF1B40F007EB7CF /* SparseCholesky in Headers */,
+				26D3B9ED1FF1B40F007EB7CF /* LU in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		26D3A78C1FF16577007EB7CF /* LACE-iOS */ = {
+		26D3A78C1FF16577007EB7CF /* LACE */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 26D3A7951FF16577007EB7CF /* Build configuration list for PBXNativeTarget "LACE-iOS" */;
+			buildConfigurationList = 26D3A7951FF16577007EB7CF /* Build configuration list for PBXNativeTarget "LACE" */;
 			buildPhases = (
 				26D3A7881FF16577007EB7CF /* Sources */,
 				26D3A7891FF16577007EB7CF /* Frameworks */,
 				26D3A78A1FF16577007EB7CF /* Headers */,
 				26D3A78B1FF16577007EB7CF /* Resources */,
+				26D3AEDA1FF1ACEB007EB7CF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26D3B05A1FF1B14E007EB7CF /* PBXTargetDependency */,
+			);
+			name = LACE;
+			productName = "LACE-iOS";
+			productReference = 26D3A78D1FF16577007EB7CF /* LACE.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		26D3B0501FF1B11F007EB7CF /* Eigen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26D3B0561FF1B11F007EB7CF /* Build configuration list for PBXNativeTarget "Eigen" */;
+			buildPhases = (
+				26D3B04C1FF1B11F007EB7CF /* Sources */,
+				26D3B04D1FF1B11F007EB7CF /* Frameworks */,
+				26D3B04E1FF1B11F007EB7CF /* Headers */,
+				26D3B04F1FF1B11F007EB7CF /* Resources */,
+				26D3BB1B1FF1B4DC007EB7CF /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "LACE-iOS";
-			productName = "LACE-iOS";
-			productReference = 26D3A78D1FF16577007EB7CF /* LACE_iOS.framework */;
+			name = Eigen;
+			productName = Eigen;
+			productReference = 26D3B0511FF1B11F007EB7CF /* Eigen.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -94,6 +692,10 @@
 				ORGANIZATIONNAME = "Jonas Bromö";
 				TargetAttributes = {
 					26D3A78C1FF16577007EB7CF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					26D3B0501FF1B11F007EB7CF = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -111,13 +713,22 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				26D3A78C1FF16577007EB7CF /* LACE-iOS */,
+				26D3A78C1FF16577007EB7CF /* LACE */,
+				26D3B0501FF1B11F007EB7CF /* Eigen */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		26D3A78B1FF16577007EB7CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26D3B57E1FF1B26F007EB7CF /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D3B04F1FF1B11F007EB7CF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -131,10 +742,58 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D3B5A21FF1B26F007EB7CF /* LpcRootInput.cc in Sources */,
+				26D3B59C1FF1B26F007EB7CF /* LpcPoint.cc in Sources */,
+				26D3B5A31FF1B26F007EB7CF /* LpcHit.cc in Sources */,
+				26D3B59D1FF1B26F007EB7CF /* LpcSingleClusterAlgorithm.cc in Sources */,
+				26D3B5AD1FF1B26F007EB7CF /* LpcEvent.cc in Sources */,
+				26D3B5991FF1B26F007EB7CF /* LpcTextInput.cc in Sources */,
+				26D3B5A61FF1B26F007EB7CF /* LpcTextOutput.cc in Sources */,
+				26D3B5951FF1B26F007EB7CF /* LpcBranchAlgorithm.cc in Sources */,
+				26D3B5B11FF1B26F007EB7CF /* LpcPathLength.cc in Sources */,
+				26D3B5AB1FF1B26F007EB7CF /* LpcInputFactory.cc in Sources */,
+				26D3B5B31FF1B26F007EB7CF /* LpcShowerAlgorithm.cc in Sources */,
+				26D3B5AE1FF1B26F007EB7CF /* LpcCluster.cc in Sources */,
+				26D3B5B01FF1B26F007EB7CF /* LpcBranchCollection.cc in Sources */,
+				26D3B5B41FF1B26F007EB7CF /* LpcProcess.cc in Sources */,
+				26D3B59B1FF1B26F007EB7CF /* LpcCurve.cc in Sources */,
+				26D3B5AC1FF1B26F007EB7CF /* LpcConvexHull.cc in Sources */,
+				26D3B59E1FF1B26F007EB7CF /* LpcHitCollection.cc in Sources */,
+				26D3B5B21FF1B26F007EB7CF /* LpcLineFitter.cc in Sources */,
+				26D3B5A01FF1B26F007EB7CF /* LpcClusterData.cc in Sources */,
+				26D3B5A41FF1B26F007EB7CF /* LpcLineSegment.cc in Sources */,
+				26D3B5A81FF1B26F007EB7CF /* LpcBranch.cc in Sources */,
+				26D3B5A71FF1B26F007EB7CF /* LpcVertex.cc in Sources */,
+				26D3B5A91FF1B26F007EB7CF /* LpcFeatures.cc in Sources */,
+				26D3B5AA1FF1B26F007EB7CF /* LpcResiduals.cc in Sources */,
+				26D3B5AF1FF1B26F007EB7CF /* LpcAbsCurve.cc in Sources */,
+				26D3B5A11FF1B26F007EB7CF /* LpcRun.cc in Sources */,
+				26D3B59F1FF1B26F007EB7CF /* LpcLineClusterAlgorithm.cc in Sources */,
+				26D3B5981FF1B26F007EB7CF /* LpcRootOutput.cc in Sources */,
+				26D3B5941FF1B26F007EB7CF /* LpcParameters.cc in Sources */,
+				26D3B59A1FF1B26F007EB7CF /* LpcAbsOutput.cc in Sources */,
+				26D3B5A51FF1B26F007EB7CF /* LpcOutputFactory.cc in Sources */,
+				26D3B5971FF1B26F007EB7CF /* LpcFunctions.cc in Sources */,
+				26D3B5961FF1B26F007EB7CF /* LpcAlgorithm.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D3B04C1FF1B11F007EB7CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26D3B05A1FF1B14E007EB7CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26D3B0501FF1B11F007EB7CF /* Eigen */;
+			targetProxy = 26D3B0591FF1B14E007EB7CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		26D3A7931FF16577007EB7CF /* Debug */ = {
@@ -143,7 +802,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -152,7 +811,6 @@
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -186,7 +844,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -201,7 +859,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -210,7 +868,6 @@
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -238,7 +895,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -256,6 +913,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/LACE/include";
 				INFOPLIST_FILE = "LACE-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -275,10 +933,55 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/LACE/include";
 				INFOPLIST_FILE = "LACE-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jonasbromo.LACE-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		26D3B0571FF1B11F007EB7CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Eigen/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonasbromo.Eigen;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		26D3B0581FF1B11F007EB7CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Eigen/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonasbromo.Eigen;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,11 +1000,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		26D3A7951FF16577007EB7CF /* Build configuration list for PBXNativeTarget "LACE-iOS" */ = {
+		26D3A7951FF16577007EB7CF /* Build configuration list for PBXNativeTarget "LACE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				26D3A7961FF16577007EB7CF /* Debug */,
 				26D3A7971FF16577007EB7CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26D3B0561FF1B11F007EB7CF /* Build configuration list for PBXNativeTarget "Eigen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26D3B0571FF1B11F007EB7CF /* Debug */,
+				26D3B0581FF1B11F007EB7CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
